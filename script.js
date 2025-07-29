@@ -171,14 +171,17 @@ else{
 
 
 //exercise 3: Compared two numbers and showed which one is greater.
-var num7 = prompt("Enter the first number for comparison");
-var num8 = prompt("Enter the second number for comparison");
-if ( num7 > num8) {
+var num7 = Number(prompt("Enter the first number for comparison"));
+var num8 = Number(prompt("Enter the second number for comparison"));
+if (num7 > num8) {
     alert(num7 + " is greater than " + num8);
 }
+else if (num7 < num8) {
+    alert(num8 + " is greater than " + num7);
+}
 else {
-    alert(num8 + " is greater than " + num7)
-};
+    alert("Both numbers are equal");
+}
 
 
 //exercise 4: Asked the user for password. If strictly correct , assuming the correct password is "abc1234", said "Access granted".
